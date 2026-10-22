@@ -15,14 +15,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Command that the player move at the pace of second, so that time dictates speed
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
         //Taking player input (a,s,w,d/arrows) for horizontal and vertical inputs
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
         //Moves the player forward, while also allowing for turns
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+        transform.Translate(Vector3.back  * speed * forwardInput * Time.deltaTime);
+        transform.Translate(Vector3.left  * turnSpeed * horizontalInput * Time.deltaTime) ;
     }
 }

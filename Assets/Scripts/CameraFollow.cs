@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 
     //Creaying a variable for the camera so it follows the ball as it progresses
     public GameObject player;
-    private Vector3 offset = new Vector3(30,0,10);
+    private Vector3 offset = new Vector3(-1,5,10);
     
 
     void LateUpdate()
