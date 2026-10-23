@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //The speed of the player while trying to avoid the obstacles
-    public float speed = 10.0f;
+    public float speed = 5.0f;
     //The speed of the player when moving left/right
-    public float turnSpeed = 20.0f;
+    public float turnSpeed = 10.0f;
     //Taking the horizontal and vertical input of the player
     public float horizontalInput;
     public float forwardInput;
